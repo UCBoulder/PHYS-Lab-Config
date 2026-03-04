@@ -1,6 +1,6 @@
 # PHYS-Lab-Config
 
-Public configuration files for CU Boulder Physics lab software.
+Public configuration files for CU Boulder Physics Undergraduate Labs software.
 
 ## Structure
 
@@ -10,7 +10,7 @@ phys2150/defaults.json   # PHYS 2150 Measurement Suite configuration
 
 ## Usage
 
-Lab applications fetch their configuration at startup from this repository using the raw GitHub URL:
+Lab applications fetch their configuration at startup using the raw GitHub URL:
 
 ```
 https://raw.githubusercontent.com/UCBoulder/PHYS-Lab-Config/main/<course>/defaults.json
