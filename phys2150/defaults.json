@@ -1,5 +1,5 @@
 {
-  "version": "2026-spring-full",
+  "version": "2026-spring-full-lab-config-repo",
   "common": {
     "error_messages": {
       "cannot_switch_title": "Cannot Switch",
