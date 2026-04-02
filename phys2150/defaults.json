@@ -17,7 +17,7 @@
       "not_connected": "Not connected to backend",
       "launch_failed_title": "Launch Failed",
       "launch_eqe_failed": "Failed to launch EQE: {message}",
-      "launch_jv_failed": "Failed to launch I-V: {message}"
+      "launch_jv_failed": "Failed to launch J-V: {message}"
     }
   },
   "jv": {
