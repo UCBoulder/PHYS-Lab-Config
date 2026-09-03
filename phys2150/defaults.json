@@ -74,7 +74,7 @@
     },
     "gui": {
       "window_title": "PHYS 2150 J-V Characterization",
-      "window_size": [1200, 800],
+      "window_size": [1200, 750],
       "window_min_size": [800, 600],
       "input_panel_width_fraction": 0.1,
       "plot_figsize": [14, 14],
@@ -125,12 +125,13 @@
       }
     },
     "validation": {
-      "cell_number": "^[A-Z]\\d{2}$",
+      "cell_number": "^[AB]\\d{3}$",
       "cell_input": {
-        "pattern": "[A-Z][0-9]{2}",
-        "placeholder": "A00",
-        "example": "A12",
-        "error": "Enter a letter + 2 digits (e.g., A03)"
+        "pattern": "[AB][0-9]{3}",
+        "max_length": 4,
+        "placeholder": "A001",
+        "example": "A001",
+        "error": "Enter A or B + 3 digits (e.g., A001)"
       },
       "pixel_range": [1, 8],
       "voltage_bounds": {
@@ -143,7 +144,7 @@
     "error_messages": {
       "device_not_found": "Keithley 2450 device not found. Please connect and power on the device and try again.",
       "invalid_voltages": "Please enter valid numerical values for voltages and step size.",
-      "invalid_cell_number": "Cell number must be a letter + 2 digits (e.g., A03, R26).",
+      "invalid_cell_number": "Cell number must be A or B + 3 digits (e.g., A001, B107).",
       "invalid_pixel_number": "Pixel number must be between {min} and {max}.",
       "measurement_failed": "Measurement failed. Please check device connections.",
       "file_save_failed": "Failed to save file. Please check permissions and disk space.",
@@ -159,7 +160,7 @@
   "eqe": {
     "defaults": {
       "start_wavelength": 350.0,
-      "end_wavelength": 730.0,
+      "end_wavelength": 780.0,
       "step_size": 10.0,
       "cell_number": "",
       "pixel_number": 1
@@ -292,18 +293,19 @@
       }
     },
     "validation": {
-      "cell_number": "^[A-Z]\\d{2}$",
+      "cell_number": "^[AB]\\d{3}$",
       "cell_input": {
-        "pattern": "[A-Z][0-9]{2}",
-        "placeholder": "A00",
-        "example": "A12",
-        "error": "Enter a letter + 2 digits (e.g., A03)"
+        "pattern": "[AB][0-9]{3}",
+        "max_length": 4,
+        "placeholder": "A001",
+        "example": "A001",
+        "error": "Enter A or B + 3 digits (e.g., A001)"
       },
       "pixel_range": [1, 8]
     },
     "error_messages": {
       "device_not_found": "Device not found. Please check the connection.",
-      "invalid_cell_number": "Cell number must be a letter + 2 digits (e.g., A03, R26).",
+      "invalid_cell_number": "Cell number must be A or B + 3 digits (e.g., A001, B107).",
       "invalid_pixel_number": "Pixel number must be between {min} and {max}.",
       "measurement_failed": "Measurement failed. Please check device connections.",
       "file_save_failed": "Failed to save file. Please check permissions and disk space.",
